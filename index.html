@@ -1,34 +1,190 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <img class="background-image" src="images/internet-speed2.jpg" alt="">
-    \
-
-
-
-    <div class="content">
-
+<!-- saved from url=(0034)http://ilte.ir/c/services/?chId=37 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <p class="bold">
-      مشترک گرامی
-    </p>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="application/javascript" src="js/jquery.min.js"></script>
+    <script type="application/javascript" src="js/service-functions.js"></script>
+    <script>
+        var serviceId = 8;
+        var serviceUrl = "https://www.charkhoneh.com/content/930522908";
+        var chainId = 37;
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+</head>
+
+<body id="particles-js">
+    <div class="container d-flex justify-content-center">
+        <div class="wrap">
+            <div class="header">
+                <div class="number number_20"></div>
+                <div class="gig-text">گیگ</div>
+            </div>
+            <div class="title-wrap">
+                <div class="title">20 گیگ اینترنت رایگان</div>
+                <div class="subtitle">ویژه جشنواره پاییز</div>
+            </div>
+            
+            <div class="main">
+                <div id="submit-phone-step" class="step-wrap submit-phone-step">
+                    <div class="step-note">
+                        <div>به منظور دریافت <span>کد هدیه</span></div>
+                        <div><span>شمـــــاره همـــراه</span> خــود را وارد نمـــایید</div>
+                    </div>
+
+                    <div class="input-wrap phone-input">
+                        <input type="tel" name="phone" id="phone" class="input" value="" placeholder="09120000000" maxlength="11" autofocus="">
+                        <button type="submit" class="btn submit-btn step-1" onclick="submitPhone()">دریافت کد</button>
+                    </div>
+                    <div class="step-desc">به قید عضویت در سرویس مهستان و ثبت نام در اپ</div>
+                </div>
+
+                <div id="submit-code-step" class="step-wrap submit-code-step">
+                    <div class="step-note"> پیامک ارسالی را وارد کنید</div>
+
+                    <div class="input-wrap code-input">
+                        <input type="tel" name="code" id="code" class="input" value="" maxlength="4" placeholder="0000">
+                        <button type="submit" class="btn submit-btn step-2" onclick="submitCode()">ارسال</button>
+                    </div>
+                    <small id="counter" class="counter">59</small>
+                    <button id="send-again" type="submit" class="btn send-again-btn" onclick="submitPhone()">دوباره بفرست</button>
+                </div>
+
+                <div id="loading" class="loading">
+                    <div class="loading-text">در حال بارگذاری . . .</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="content1">
-    <p>
-      تنظیمات گوشی شما برای استفاده از حد اکثر سرعت اینترنت مناسب نمی باشد!
-    </p>
-    <p id="text2">
-      برای استفاده از حداکثر سرعت اینترنت بر روی دریافت تنظیمات کلیک کنید.
-    </p>
-       
-    <a href="#">دریافت تنظیمات</a>
-    </div>
-  </body>
-</html>
+
+    <div class="bg-spinner"></div>
+    <script type="application/javascript" src="js/script.js"></script>
+    <script type="application/javascript" src="js/particles.js"></script>
+
+
+
+<script>
+    particlesJS('particles-js',
+
+        {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 900
+                    }
+                },
+                "color": {
+                    "value": "#fff"
+                },
+                "shape": {
+                    "type": ['image3','image4','image5'],
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "/img/s3.png",
+                        "width": 100,
+                        "height": 100
+                    },
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 6,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 22,
+                        "size_min": 1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 500,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 2
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "bottom",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 2324.947488255008,
+                        "rotateY": 3527.50653390415
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 0,
+                        "line_linked": {
+                            "opacity": 0.13161899591158482
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 4,
+                        "duration": 0.3,
+                        "opacity": 1,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        }
+        , function() {
+            console.log('callback - particles.js config loaded');
+        }
+    );
+</script><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1080" height="1920"></canvas>
+
+</body></html>
